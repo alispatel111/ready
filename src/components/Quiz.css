@@ -1,0 +1,347 @@
+/* General container styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInContainer 0.6s ease-in-out;
+}
+
+/* Keyframe animation for container */
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Subject select dropdown */
+.subject-select-container {
+    margin-bottom: 20px;
+}
+
+.subject-select {
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.subject-select:hover {
+    border-color: #00c6ff;
+    background-color: #eef6ff;
+}
+
+/* Question and Options styling */
+.question-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.question {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Option buttons */
+.option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-btn {
+    background-color: #e0f7fa;
+    border: 2px solid #00acc1;
+    padding: 12px 25px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.option-btn:hover {
+    transform: scale(1.05);
+    background-color: #00acc1;
+    color: #fff;
+}
+
+.option-btn.checked {
+    background-color: #00acc1;
+    color: #fff;
+}
+
+/* Comprehension textarea styling */
+.comprehension-container {
+    margin-bottom: 20px;
+}
+
+.comprehension-textarea {
+    width: 100%;
+    height: 180px; /* Larger text area */
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.comprehension-textarea:focus {
+    transform: scale(1.02);
+    border-color: #00acc1;
+}
+
+/* Animations */
+.animated-box, .animated-options {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Next button styling */
+.next-button {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.next-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0056b3, #008cdd);
+}
+
+/* Quiz.css */
+.quiz-container {
+    padding: 20px;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-button {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.option-button.correct {
+    background-color: green; /* Green for correct answers */
+    color: white;
+}
+
+.option-button.incorrect {
+    background-color: red; /* Red for incorrect answers */
+    color: white;
+}
+
+/* Quiz.css */
+.quiz-container {
+    padding: 20px;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-btn {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.option-btn.correct {
+    background-color: green; /* Green for correct answers */
+    color: white;
+}
+
+.option-btn.incorrect {
+    background-color: red; /* Red for incorrect answers */
+    color: white;
+}
+
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Logout button */
+
+.logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Input fields */
+
+/* General styling for the input fields */
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields common styles */
+.user-info-container input {
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1.1rem;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for input fields */
+.user-info-container input:hover {
+    border-color: #00acc1;
+    background: linear-gradient(135deg, #ffffff, #e1f5fe);
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Input fields focus effect */
+.user-info-container input:focus {
+    outline: none;
+    border-color: #00acc1;
+    background: linear-gradient(135deg, #ffffff, #b3e5fc);
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation on container for smooth appearance */
+@keyframes fadeInInput {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-info-container {
+    animation: fadeInInput 0.6s ease-in-out;
+}
+
+
+/* Password Section */
+
+
+.password-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-container input[type="password"] {
+    width: 80%; /* Adjust width as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.password-container .verify-password-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.password-container .verify-password-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Speech recogniazation */
+
+.voice-input-btn {
+    background-color: #008CBA; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.voice-input-btn:hover {
+    background-color: #005f8a; /* Darker blue on hover */
+}

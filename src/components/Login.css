@@ -1,0 +1,113 @@
+/* Login.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb); /* Light gradient background */
+    animation: backgroundAnimation 5s ease infinite; /* Infinite background animation */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    }
+    50% {
+        background: linear-gradient(to bottom, #bbdefb, #e3f2fd);
+    }
+    100% {
+        background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    }
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeIn 0.8s ease; /* Increased duration for fade-in animation */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; /* Increased border radius for a softer look */
+    padding: 30px; /* More padding for better spacing */
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.login-form:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.input-field {
+    margin: 15px 0; /* Increased margin for better spacing */
+    padding: 12px;
+    width: 220px; /* Increased width */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Increased border radius */
+    transition: border 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.input-field:focus {
+    border: 2px solid #6a11cb; /* Change border color on focus */
+    transform: scale(1.05); /* Scale effect on focus */
+}
+
+.login-button {
+    padding: 12px;
+    width: 120px; /* Increased button width */
+    background-color: #6a11cb; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.login-button:hover {
+    background-color: #2575fc; /* Change color on hover */
+    transform: scale(1.1); /* Slightly larger scale effect on hover */
+}
+
+.error-message {
+    color: red;
+    margin: 10px;
+}
+
+.toast {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    padding: 12px; /* Increased padding */
+    border-radius: 8px; /* Increased border radius */
+    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards; /* Fade in and out animation */
+    z-index: 1000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
