@@ -45,7 +45,7 @@ function QuizResult(props) {
 
                 questionMessage += `Your Answer: ${question.options[userAnswer - 1] || "No answer"}\n`;
                 questionMessage += `Correct Answer: ${question.options[correctAnswer - 1]}\n`;
-                questionMessage += isCorrect ? "Result: Correct ✅\n\n" : "Result: Incorrect ❌\n\n";
+                questionMessage += isCorrect ? "Result: Correct \n\n" : "Result: Incorrect \n\n";
             }
 
             const questionLines = doc.splitTextToSize(questionMessage, 180); // Split each question to fit within page width
